@@ -1,0 +1,32 @@
+{
+  "name": "store",
+  "version": "0.0.1",
+  "scripts": {
+    "stylelint": "stylelint 'src/**/*.scss' && prettier-stylelint 'src/**/*.scss'",
+    "themelint": "theme-lint ./dist"
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-shopify",
+      "stylelint-config-shopify/prettier"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSpacing": false
+  },
+  "devDependencies": {
+    "@shopify/slate-tools": "0.13.0",
+    "@shopify/theme-lint": "^2.0.0",
+    "eslint": "^4.15.0",
+    "eslint-plugin-shopify": "^19.0.0",
+    "postcss-shopify": "^1.0.1",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint": "^8.4.0",
+    "stylelint-config-shopify": "^4.0.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
